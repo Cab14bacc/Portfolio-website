@@ -193,6 +193,15 @@ body {
 #contact-submit-button {
   margin-top: 0.5rem;
 }
+
+#contact-submit-button:hover {
+  background-color: rgb(200,200,200);
+}
+
+#contact-submit-button:active {
+  transform: translateX(0.1rem) translateY(0.1rem);
+}
+
 .h-captcha{
   margin-top: 0.5rem;
   border-radius: 0.25rem;
