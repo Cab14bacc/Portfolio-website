@@ -10,6 +10,12 @@
   letter-spacing:0.12em;
   scroll-margin-top: var(--nav-height);
 }
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 body {
   margin: 0;
   margin-top: var(--nav-height);
@@ -175,6 +181,10 @@ body {
   border-bottom: 2px solid black;
 }
 
+#welcome-section p {
+  text-align: center;
+  margin-top: 2rem;
+}
 
 
 /* project section */
@@ -289,10 +299,22 @@ section > h1 {
   flex-direction: column;
   justify-content: space-evenly;
 }
-#contact {
-  display: flex;
+
+#contact-container {
+  display: inline-flex;
   flex-direction: column;
-  padding: 3vw 25vw;
+  justify-content: center;
+  align-items: center;
+
+
+}
+
+#contact {
+  width: 50%;
+  max-width: 700px;
+  min-width: 302px;
+  display: inline-flex;
+  flex-direction: column;
 }
 
 #contact > label {
@@ -322,9 +344,12 @@ section > h1 {
 }
 
 .h-captcha{
+  position: relative;
   margin-top: 0.5rem;
   border-radius: 0.25rem;
-  
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
 }
 
 /* media queries */

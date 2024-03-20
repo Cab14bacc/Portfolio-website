@@ -120,19 +120,21 @@
 
   <section id="contact-section">
     <h1 id="contact-title">Contact Form</h1>
-    <form method="post" id="contact" action="https://api.web3forms.com/submit">
-      <input type="hidden" name="access_key" value="21f9c1ba-de10-4033-995e-1478d94d4c48">
-      <label for="contact-email" id="contact-email-label">Email</label>
-      <input name="contact-email" id="contact-email" type="email" placeholder="Your email" required>
+    <div id="contact-container">
+      <form method="post" id="contact" action="https://api.web3forms.com/submit">
+        <input type="hidden" name="access_key" value="21f9c1ba-de10-4033-995e-1478d94d4c48">
+        <label for="contact-email" id="contact-email-label">Email</label>
+        <input name="contact-email" id="contact-email" type="email" placeholder="Your email" required>
 
-      <label for="contact-content" id="contact-content-label">Content</label>
-      <textarea name="contact-content" id="contact-content" type="text" rows="5" maxlength="500"
-        placeholder="Things you want tell me :)" required></textarea>
+        <label for="contact-content" id="contact-content-label">Content</label>
+        <textarea name="contact-content" id="contact-content" type="text" rows="5" maxlength="500"
+          placeholder="Things you want tell me :)" required></textarea>
 
-      <span class="h-captcha" data-captcha="true"></span>
-      <input id="contact-submit-button" type="submit" value="Submit">
+        <span class="h-captcha" data-captcha="true"></span>
+        <input id="contact-submit-button" type="submit" value="Submit">
 
-    </form>
+      </form>
+    </div>
     <script src="https://web3forms.com/client/script.js" async defer></script>
   </section>
   <a id="profile-link" href="https://www.github.com" target="_blank"></a>
