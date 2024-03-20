@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <nav id="navbar">
+      <span id="nav-logo"></span>
+      <ul id="navlist">
+        <li>
+          <a id="about-link" href="#welcome-section">About</a>
+        </li>
+
+        <li>
+          <a id="project-section-link" href="#projects">Projects</a>
+        </li>
+        
+        <li>
+          <a id="contact-link" href="#contact-section">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    
+
+    <section id="welcome-section">
+      <h1>Leo's Portfolio Website</h1>
+      <p>Life isn't about finding yourself. Life is about creating yourself.</p>
+    </section>
+<!-- should have name project-section -->
+    <section id="projects">
+      <h1 id="project-title">Projects</h1>
+      
+      
+      <div id="project-container">
+
+        <div class="project-tile" id="project-tile-1">
+          <img class="project-tile-image" src="res/project_img/project_1.png">
+          <p class="project-tile-description">Computer Graphics project. Pure OpenGL. A underwater scene with a roller coaster ride.  </p>
+            <a class="project-tile-learn-more" href="https://github.com/Cab14bacc/Project3_Roller_Coaster">Learn More...</a>
+        </div>
+
+
+
+        <div class="project-tile" id="project-tile-2">
+          <img class="project-tile-image" src="res/project_img/2.jpg">
+          <p class="project-tile-description">22222222222222222</p>
+            <a class="project-tile-learn-more" href="https://github.com/Cab14bacc/Project3_Roller_Coaster">Learn More...</a>
+        </div>
+
+        <div class="project-tile" id="project-tile-3">
+          <img class="project-tile-image" src="res/project_img/2.jpg">
+          <p class="project-tile-description">333333333333333333333333333</p>
+            <a class="project-tile-learn-more" href="https://github.com/Cab14bacc/Project3_Roller_Coaster">Learn More...</a>
+        </div>
+
+        
+
+        <div class="project-tile" id="project-tile-4">
+          <img class="project-tile-image" src="res/project_img/2.jpg">
+          <p class="project-tile-description">44444444444444444</p>
+            <a class="project-tile-learn-more" href="https://github.com/Cab14bacc/Project3_Roller_Coaster">Learn More...</a>
+        </div>
+        <button id="project-previous">❮</button>
+        <button id="project-next">❯</button>
+      </div>
+      
+
+    </section>
+
+    <section id="contact-section">
+      <h1 id="contact-title">Contact Form</h1>
+      <form method="post" id="contact" action="https://api.web3forms.com/submit">
+        <input type="hidden" name="access_key" value="21f9c1ba-de10-4033-995e-1478d94d4c48">
+        <label for="contact-email" id="contact-email-label">Email</label>
+        <input name="contact-email" id="contact-email" type="email" placeholder="Your email" required>
+        
+        <label for="contact-content" id="contact-content-label">Content</label>
+        <textarea name="contact-content" id="contact-content" type="text" rows="5" maxlength="500" placeholder="Things you want to say to me :)" required></textarea>
+
+        <span class="h-captcha" data-captcha="true"></span>
+        <input id="contact-submit-button" type="submit" value="Submit">
+
+      </form>
+      <script src="https://web3forms.com/client/script.js" async defer></script>
+    </section>
+    <a id="profile-link" href="https://www.github.com" target="_blank"></a>
+
+  </body>
+</html>
