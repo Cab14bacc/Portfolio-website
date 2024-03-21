@@ -397,7 +397,7 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     background-color: black;
     box-shadow: 0 -0.2rem 0.5rem rgba(0, 0, 0, .40);
     z-index: 1;
