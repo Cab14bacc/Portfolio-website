@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="projects_script.js" defer></script>
+  <script src="https://kit.fontawesome.com/8971da1776.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./projects_page.css">
+</head>
+
+<body>
+  <div id="filter"></div>
+  <nav id="navbar">
+    <span id="nav-logo"><a href="../../index.html"><img src="../../res/logo/logo.png"></a></span>
+    <span id="nav-navlist-button-container">
+      <ul class="navlist" id="navlist-original">
+        <li>
+          <a id="about-link" href="#welcome-section">About</a>
+        </li>
+
+        <li>
+          <a id="project-section-link" href="./projects_page.html">Projects</a>
+        </li>
+
+        <li>
+          <a id="contact-link" href="#contact-section">Contact</a>
+        </li>
+        
+        
+      </ul>
+
+      <ul class="navlist" id="navlist-dropdown">
+        <li>
+          <a id="about-link" href="#welcome-section">About</a>
+        </li>
+
+        <li>
+          <a id="project-section-link" href="./projects_page.html">Projects</a>
+        </li>
+
+        <li>
+          <a id="contact-link" href="#contact-section">Contact</a>
+        </li>
+        
+        
+      </ul>
+      <span id="nav-dropdown-menu-button-container">
+        <button id="nav-dropdown-menu-button" aria-label="dropdown menu" type="button">
+          <i id="nav-dropdown-menu-button-icon1" class="fa-solid fa-bars"></i>
+        </button>
+      </span>
+    </span>
+    
+
+  </nav>
+  
+
+  <!-- should have name project-section -->
+  <section id="projects">
+    <div id="projects-header">
+        <h1 id="project-title">Projects</h1>
+        <div id="project-sort-search">
+            <div id="project-search-container">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input id="project-search" type="text" placeholder="search.."></input>
+            </div>
+            <div id="project-tags-container">
+                <label for="project-tag1" class="project-tag">Computer Graphics</label>
+                <input type="checkbox" id="project-tag1"></input>
+
+                <label for="project-tag2" class="project-tag">Mini Game</label>
+                <input type="checkbox" id="project-tag2"></input>
+
+
+            </div>
+        </div>
+    </div>
+
+    <div id="project-container">
+        <div class="project-tile" id="project-tile-1">
+            <img class="project-tile-image" src="../../res/project_img/1_rollecoaster.png">
+            <h3 class="project-tile-title">Roller Coaster</h3>
+            <p class="project-tile-description">Computer Graphics project. Pure OpenGL. A underwater scene with a roller
+                coaster ride, and many other small features. </p>
+                <a class="project-tile-learn-more" href="https://github.com/Cab14bacc/Project3_Roller_Coaster"
+                target="_blank">Learn More...</a>
+            </div>
+            
+            
+            
+            <div class="project-tile" id="project-tile-2">
+                <img class="project-tile-image" src="../../res/project_img/2_maze.png">
+                <h3 class="project-tile-title">3D Maze</h3>
+                <p class="project-tile-description">Computer Graphics project. Given a 2d maze, output a 3d maze in OpenGL with
+                    frustum culling. </p>
+                    <a class="project-tile-learn-more" href="https://github.com/Cab14bacc/Project3_Roller_Coaster"
+                    target="_blank">Learn More...</a>
+                </div>
+                
+                <div class="project-tile" id="project-tile-3">
+                    <img class="project-tile-image" src="../../res/project_img/3_image_editor.png">
+                    <h3 class="project-tile-title">Photo Editor</h3>
+                    <p class="project-tile-description">Computer Graphics project. Photo image editor with many filters, and other
+                        capabilities like scaling and rotate.</p>
+                        <a class="project-tile-learn-more" href="https://github.com/Cab14bacc/Project3_Roller_Coaster"
+              target="_blank">Learn More...</a>
+          </div>
+    
+    
+    
+          <div class="project-tile" id="project-tile-4">
+            <img class="project-tile-image" src="../../res/project_img/4_dungeon.png">
+            <h3 class="project-tile-title">Dungeon Game</h3>
+            <p class="project-tile-description">Mini Game. A mini game that resembles a dungeon. With potions and enemies,
+              each with 2 types. Goal is to kill all enemies, and advance on to the next level. </p>
+            <a class="project-tile-learn-more" href="https://github.com/Cab14bacc/Project3_Roller_Coaster"
+              target="_blank">Learn More...</a>
+          </div>
+         
+    
+    
+          <div class="project-tile" id="project-tile-5">
+            <img class="project-tile-image" src="../../res/project_img/5_chess.png">
+            <h3 class="project-tile-title">Chess</h3>
+            <p class="project-tile-description">Mini Game. Chess. 😒</p>
+            <a class="project-tile-learn-more" href="https://github.com/Cab14bacc/Project3_Roller_Coaster"
+              target="_blank">Learn More...</a>
+          </div>
+      
+
+
+    </div>
+  </section>
+  <footer>
+    <p>© 2023 by Leo. Proudly created with HTML, CSS, and JavaScript.</p>
+    <div>
+      <a>
+        <i class="fa-brands fa-github" style="color: #B197FC;"></i>
+      </a>
+    </div>
+  </footer>
+</body>
+
+</html>
