@@ -3,9 +3,8 @@ z-index defaults to 0
 -1: #welcome-background-container
 0: 
 1: #project-previous, #project-next, #contact-section
-2: #navbar
-3: #navlist-dropdown, #filter
-
+2: #navbar, #filter
+3: #navlist-dropdown,
 
 */
 :root {
@@ -57,16 +56,17 @@ body {
 }
 
 
+
 #filter {
     display: none;
     position: fixed;
     top: var(--nav-height);
-    right: var(--dropdown-menu-width);
+  
     background-color: rgba(0, 0, 0, .25);
     height: 100vh;
     width: 100vw;
-    z-index: 3;
-}
+    z-index: 2;
+  }
 
 
 #navbar {
@@ -127,15 +127,34 @@ body {
     row-gap: 2rem;
     column-gap: 0;
     position: fixed;
-    top: calc(var(--nav-height) - 1rem);
-    right: 0;
+    top: calc(var(--nav-height) - 2rem);
+    right: 1.5rem;
     background-color: white;
     justify-content: flex-start;
-    height: 100vh;
+    height: min-content;
     width: var(--dropdown-menu-width);
     z-index: 3;
-    padding-top: 2rem;
-}
+    padding: 2rem 1rem 2rem 2rem;
+    border-radius: 2rem 0rem 2rem 2rem;
+    box-shadow: 0 0 2rem rgba(0, 0, 0, .25);
+  }
+  
+  #navlist-dropdown-divider {
+    border-bottom: 2px solid black;
+    margin: 0 -1rem -2rem -2rem;
+  
+  }
+  
+  #navlist-dropdown-social-title {
+    margin-bottom: -2rem;
+    border-bottom: 0px;
+    padding: 0;
+  }
+  
+  #navlist-dropdown-socials {
+    border-bottom: 0;
+    font-size: 2rem;
+  }
 
 
 .navlist>li {
