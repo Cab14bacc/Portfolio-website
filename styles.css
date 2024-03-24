@@ -349,8 +349,15 @@ section h1 {
 }
 
 .project-tile-image {
-  height: 65%;
+  height: 60%;
   width: 100%;
+}
+
+.project-tile-title {
+  font-size: 1.0rem;
+  height: 5%;
+  margin: 0.5rem 0;
+  text-align: center;
 }
 
 .project-tile-description {
@@ -373,6 +380,8 @@ section h1 {
 .project-tile-learn-more:visited {
   color: black;
 }
+
+
 
 
 /* contact section */
